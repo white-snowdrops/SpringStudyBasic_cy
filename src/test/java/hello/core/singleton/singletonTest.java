@@ -2,6 +2,7 @@ package hello.core.singleton;
 
 import hello.core.AppConfig;
 import hello.core.member.MemberService;
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -18,5 +19,8 @@ public class singletonTest {
         //참조값이 다른 것을 확인
         System.out.println("memberService1: " + memberSevice1);
         System.out.println("memberService2: " + memberSevice2);
+
+        //memberService 1 은 memberService랑 다름
+        Assertions.assertThat(memberSevice1).isNotSameAs(memberSevice2);
     }
 }
