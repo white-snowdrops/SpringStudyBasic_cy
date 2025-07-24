@@ -1,7 +1,5 @@
 package hello.core.scan.filter;
 
-import hello.core.AppConfig;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.NoSuchBeanDefinitionException;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -12,7 +10,7 @@ import org.springframework.context.annotation.FilterType;
 import static org.assertj.core.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-public class CompoentFilterAppConfigTest {
+public class ComponentFilterAppConfigTest {
 
     @Test
     void filterScan() {
